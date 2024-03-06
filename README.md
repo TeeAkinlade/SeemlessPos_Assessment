@@ -1,7 +1,8 @@
 # E-commerce web application project
 
-This is an E-commerce website designed using React, Typescript, Tailwind and a Mock API. The application loads products from a Mock API and displays them. Users can select a product to display information including price, product name, description, rating of the product,  a back arrow is included on this page to enable user go back to the previous page(Homepage). 
-User can add an item to their shopping cart by clicking on add to cart, the shopping cart page shows all selected items that are the the cart and the sum of all selected items is also displayed on this page. User can go back to the the selected item details page by clicking on the product image or product name, a remove button or clear cart botton is also included on the Cart page. The Checkout button on the cart page takes users to an invoice page.
+This is an E-commerce website created using React, Typescript, Tailwind and a Mock API. The application loads products from a Mock API and displays them. Users can select a product to display information including price, product name, description, rating of the product, and  a back arrow that takes user back to the previous page(Homepage). 
+
+User can add an item to the shopping cart by clicking on "Add to cart", the shopping cart page displays all selected items that are in the shopping cart and the sum of all selected items. User can also navigated to an item details page by clicking on an item image or item name in the shopping cart. A button to remove an item and a button to clear all items in the cart is also included on the Cart page. The Checkout button on the cart page takes users to an invoice page.
 
 # Tech Stack
 
@@ -14,10 +15,13 @@ User can add an item to their shopping cart by clicking on add to cart, the shop
 - Typescript
 - Json server
 
-## Implementation
+## Implementation of tech stack
 
 Typescript was embedded to this project to leverage statics typing, catches type-related errors at compile time, fix errors before the code runs and also to improve the code quality.
-React useContext hook was used to share data across multiple components without the need for prop drilling. React router dom was also implemented in this project to enable navigation across pages while React-icons was used to add icons to create a good user interface. A toast message is display when a user add a product, removed a product, clear cart or order product(s), this was achieved with the use of React hot toast . Mock API serves as fake API where the products displayed are fetched. 
+
+React router dom was also implemented in this project to enable navigation across pages while React-icons was used to add icons to create a good user interface. A toast message is display when a user add a product, removed a product, clear cart or order product(s), this was achieved with the use of React hot toast . Mock API serves as fake API where the products displayed are fetched.
+
+React useContext hook was used to share data across multiple components without the need for prop drilling. A useContext provider which wraps the entire App.tsx to enable each component within the App.tsx have access to the data was also created
 
 ### Mock API
     I used the following steps to implement a the json-server to the project
@@ -67,12 +71,11 @@ React useContext hook was used to share data across multiple components without 
 }
 ```
 
+## To checkout the website click the link below:
 
-# Getting Started with Create React App
+<https://seemless-pos-assessment.vercel.app/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## Getting Started with Create React App
 
 In the project directory, you can run:
 
@@ -80,19 +83,3 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
